@@ -1,11 +1,10 @@
-﻿using System;
+using System;
 
 namespace Library
 {
-    public class Greeter
+    public class Singleton<T> where T : new()
     {
-        /*
-        private Greeter()
+        private Singleton()
         {
             // Intentionally left blank
         }
@@ -23,11 +22,6 @@ namespace Library
 
                 return instance;
             }
-        }
-        */
-        public void SayHiToTheWorld()
-        {
-            Console.WriteLine("Hello World!");
         }
     }
 }
